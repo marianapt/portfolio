@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+<!-- jquery link  -->
 
   <title>Mariana Perez, Software Developer</title>
 
@@ -130,23 +131,59 @@
 
 </div>
 
-<div id="features">  
+<div id="features" style= "background-color:black;">  
   
 
 
+    <button onclick="myFunction()">Front-end</button>
+
+    <div id="myDIV">
+
+    <p>  <a href="https://marianapt.github.io/JennaSalon/"></a>      <img src="img/touchSalon.png" width="200" height="177">
+    </p>
+    <p>  <a href="https://marianapt.github.io/JennaSalon/"></a>      <img src="img/patrick.png" width="200" height="177">
+    </p>
+    
+        </div>
+    
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+    
+    <button onclick="myFunction()">Full Stack</button>
+
+    <div id="myDIV">
+
+    <p>  <a href="https://marianapt.github.io/JennaSalon/"></a>      <img src="img/jusGo.png" width="200" height="177">
+    </p>
+    <p>  <a href="https://marianapt.github.io/JennaSalon/"></a>      <img src="img/itsaGo.png" width="200" height="177">
+    </p>
+    
+        </div>
+    
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+    
 
 
-<!-- jQuery -->
-<script>
-  $(document).ready(function(){
-      $("#hide").click(function(){
-          $("h2").hide();
-      });
-      $("#show").click(function(){
-          $("h2").show();
-      });
-  });
-  </script>
+
            
 </div>
 
@@ -210,7 +247,8 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/new-age.min.js"></script>
 
