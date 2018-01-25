@@ -155,7 +155,11 @@ section {
           #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
             color: #fdcc52; } }
 /* profile */
+#container {
 
+  flex: 1;
+  justify-items: center;
+}
 header.masthead {
   position: relative;
   width: 100%;

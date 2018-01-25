@@ -131,109 +131,46 @@
 
 </div>
 
-<div id="features" >  
+<div  style="background-color: black;" id="features" >  
   
+    <div style="margin-top: 60px; margin-left: 40%;"class="btn-group btn-group-toggle " data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Front-end
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Full-stack
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> All
+        </label>
+      </div>
 
-    
-    <section class="p-0" id="portfolio">
-        <div class="container-fluid p-0">
-          <div class="row no-gutters popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-                <img class="img-fluid" src="img/foundry.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-                <img class="img-fluid" src="img/itsaGo.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-                <img class="img-fluid" src="img/itaGo.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-                <img class="img-fluid" src="img/touchSalon.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/patrick.png">
-                <img class="img-fluid" src="img/patrick.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-                <img class="img-fluid" src="img/jusGo.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Category
-                    </div>
-                    <div class="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+
+
+    <div class="buttons">
+        <a  id="showall">All</a>
+        <a  class="showSingle" target="1">Div 1</a>
+        <a  class="showSingle" target="2">Div 2</a>
+        <a  class="showSingle" target="3">Div 3</a>
+        <a  class="showSingle" target="4">Div 4</a>
         </div>
-      </section>
-  
-    
+        <div id="div1" class="targetDiv">Lorum Ipsum1</div>
+        <div id="div2" class="targetDiv">Lorum Ipsum2</div>
+        <div id="div3" class="targetDiv">Lorum Ipsum3</div>
 
+
+      <script type="text/javascript">
+      jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.targetDiv').show();
+        });
+        jQuery('.showSingle').click(function(){
+              jQuery('.targetDiv').hide();
+              jQuery('#div'+jQuery(this).attr('target')).show();
+        });
+});
+      
+      </script>
            
 </div>
 
