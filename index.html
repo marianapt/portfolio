@@ -131,46 +131,39 @@
 
 </div>
 
-<div  style="background-color: black;" id="features" >  
+<div  style="text-align: center; font-size: 30px; color:white; background-color: black;" id="features" >  
   
-    <div style="margin-top: 60px; margin-left: 40%;"class="btn-group btn-group-toggle " data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Front-end
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Full-stack
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> All
-        </label>
-      </div>
-
-
-
-    <div class="buttons">
-        <a  id="showall">All</a>
-        <a  class="showSingle" target="1">Div 1</a>
-        <a  class="showSingle" target="2">Div 2</a>
-        <a  class="showSingle" target="3">Div 3</a>
    
-        </div>
-        <div id="div1" class="targetDiv">Lorum Ipsum1</div>
-        <div id="div2" class="targetDiv">Lorum Ipsum2</div>
-        <div id="div3" class="targetDiv">Lorum Ipsum3</div>
+     
+        <div class="menu">
+          <a  id="showall">All</a>
+          <a  class="showSingle" target="1">Front-end</a>
+          <a  class="showSingle" target="2">Full Stack</a>
+        
+          </div>
+          
+          <section class="cnt">
+          <div id="div1" class="targetDiv"> <img style="width:200px; height: 200px; "src="img/frontend1.jpg" alt=""></div>
+          <div id="div2" class="targetDiv"><img style="width:200px; height: 200px; "src="img/backend1.jpg" alt=""></div>
+          
+          </section>
 
 
-      <script type="text/javascript">
-      jQuery(function(){
-         jQuery('#showall').click(function(){
-               jQuery('.targetDiv').show();
-        });
-        jQuery('.showSingle').click(function(){
-              jQuery('.targetDiv').hide();
-              jQuery('#div'+jQuery(this).attr('target')).show();
-        });
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+  jQuery(function(){
+    jQuery('#showall').click(function(){
+          jQuery('.targetDiv').show();
+   });
+   jQuery('.showSingle').click(function(){
+         jQuery('.targetDiv').hide();
+         jQuery('#div'+$(this).attr('target')).show();
+   });
 });
-      
-      </script>
+
+
+
+        </script>
            
 </div>
 
